@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Assessment</title>
+    <link rel="stylesheet" href="assessment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="assessment-container">
+        <h2 class="assessment-title">Self-Assessment</h2>
+        <div class="assessment-intro">
+            <p>Please answer the following questions to assess your current state.</p>
+        </div>
+
+        <div id="question-container">
+        </div>
+
+        <div class="assessment-nav">
+            <button id="prev-btn" disabled>Previous</button>
+            <button id="next-btn">Next</button>
+            <button id="submit-btn" style="display: none;">Submit</button>
+        </div>
+
+        <div id="progress-container" class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+    </div>
+    <div id="result-container" style="display: none;">
+        <h2 class="result-heading">Assessment Result</h2>
+        <div class="result-content">
+            <div class="result-left">
+                <p id="result-message" class="assessment-completed">Assessment Completed!</p>
+                <div class="assessment-results">
+                    <h3>Your Assessment Results:</h3>
+                    <p class="disclaimer">This is an anonymous self-assessment and not a substitute for professional diagnosis.</p>
+                    <div id="demographic-info"></div>
+                    <div id="phq9-results"></div>
+                    <div id="gad7-results"></div>
+                    <p class="recommendation">It is recommended to consult with a healthcare professional for a formal diagnosis and personalized advice.</p>
+                    <div class="username-option">
+                        <input type="checkbox" id="show-username">
+                        <label for="show-username">Show User Name</label>
+                        <span id="user-name-placeholder" style="display: none; font-weight: bold; color: #00bcd4;">[User Name]</span>
+                    </div>
+                </div>
+            </div>
+            <div class="result-right">
+                <div id="comparative-data" class="comparative-data">
+                    <h3>Comparative Mental Health Data</h3>
+                    <p>This section shows how your results compare to general student mental health data.</p>
+                    <div id="depression-comparison">
+                        <canvas id="depressionChart"></canvas>
+                    </div>
+                    <div id="anxiety-comparison">
+                        <canvas id="anxietyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="restart-btn">Restart Assessment</button>
+    </div>
+
+    <script src="assessment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>

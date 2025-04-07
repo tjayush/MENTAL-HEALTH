@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Habits for Students | MindSpace</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+            color: #495057;
+            line-height: 1.7;
+            padding-top: 80px; /* Adjust if your navigation is fixed and has a different height */
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .understanding-depression-hero { /* Using the same class name */
+            background-color: #e9ecef;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .understanding-depression-hero h1 {
+            font-size: 3em;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .understanding-depression-hero .hero-subtitle {
+            font-size: 1.2em;
+            color: #6c757d;
+            margin-bottom: 25px;
+        }
+
+        .understanding-depression-hero .hero-image {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        main .section h2 {
+            font-size: 2.2em;
+            color: #007bff;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        main .section p {
+            margin-bottom: 15px;
+        }
+
+        main .section ul {
+            list-style-type: disc;
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        main .section ul li {
+            margin-bottom: 8px;
+        }
+
+        main .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        nav {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links li:first-child {
+            margin-left: 0;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .signup-button {
+            background-color: #fff;
+            color: #007bff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .footer-column {
+            flex: 1;
+            margin: 0 20px;
+            text-align: left;
+        }
+
+        .footer-column h3 {
+            border-bottom: 2px solid #6c757d;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-column ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-links a {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #6c757d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container container">
+            <div class="logo">Mind<span>Space</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#habits">Healthy Habits</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="understanding-depression-hero">
+            <h1>Healthy Habits for Students</h1>
+            <p class="hero-subtitle">Simple daily routines to boost your mental health and academic success.</p>
+           
+        </section>
+
+        <main>
+            <section class="section" id="sleep">
+                <h2>Prioritizing Quality Sleep</h2>
+                <p>In the demanding life of a student, sleep is often sacrificed. However, consistent and sufficient sleep is foundational for both mental and academic performance. Aim for 7-9 hours of quality sleep each night to allow your brain to consolidate information, improve focus, and regulate your mood.</p>
+                <ul>
+                    <li><span class="highlight">Establish a Regular Sleep Schedule:</span> Go to bed and wake up at consistent times, even on weekends.</li>
+                    <li><span class="highlight">Create a Relaxing Bedtime Routine:</span> Wind down with activities like reading or a warm bath, avoiding screens before bed.</li>
+                    <li><span class="highlight">Optimize Your Sleep Environment:</span> Ensure your bedroom is dark, quiet, and cool for optimal sleep.</li>
+                </ul>
+                <img src="picturs/sleep.jpg" alt="Student peacefully sleeping">
+                <p>Adequate sleep leads to improved concentration, better memory retention, and enhanced problem-solving skills.</p>
+            </section>
+
+            <section class="section" id="nutrition">
+                <h2>Fueling Your Brain with Nutritious Food</h2>
+                <p>The food you eat directly impacts your brain function and energy levels. A balanced diet rich in whole foods provides the necessary nutrients for optimal cognitive performance.</p>
+                <ul>
+                    <li><span class="highlight">Eat Regular, Balanced Meals:</span> Don't skip meals, and ensure they include a mix of fruits, vegetables, whole grains, and lean protein.</li>
+                    <li><span class="highlight">Stay Hydrated:</span> Drink plenty of water throughout the day to maintain focus and energy levels.</li>
+                    <li><span class="highlight">Limit Processed Foods and Sugary Drinks:</span> These can lead to energy crashes and negatively affect concentration.</li>
+                </ul>
+                <img src="picturs/fluidyourbrain.jpg" alt="A plate of healthy food">
+                <p>Nourishing your body with healthy foods supports better concentration, memory, and overall well-being.</p>
+            </section>
+
+            <section class="section" id="exercise">
+                <h2>The Benefits of Regular Physical Activity</h2>
+                <p>Exercise is not just for physical health; it significantly boosts mental health by reducing stress, improving mood, and enhancing cognitive function.</p>
+                <ul>
+                    <li><span class="highlight">Find Enjoyable Activities:</span> Choose activities you like, whether it's sports, dancing, or walking.</li>
+                    <li><span class="highlight">Aim for Daily Movement:</span> Try to incorporate at least 30 minutes of physical activity into your daily routine.</li>
+                </ul>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IDDPNuU-420?si=_bYnJ3fqC_FfzIRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  
+                </div>
+                <p>Regular exercise improves focus, reduces anxiety, and increases overall energy levels.</p>
+            </section>
+
+            <section class="section" id="mindfulness">
+                <h2>Practicing Mindfulness and Stress Management</h2>
+                <p>Student life can be stressful. Developing mindfulness practices can help manage stress, improve focus, and enhance emotional well-being.</p>
+                <ul>
+                    <li><span class="highlight">Incorporate Deep Breathing Exercises:</span> Practice simple breathing techniques to calm your mind.</li>
+                    <li><span class="highlight">Try Meditation or Mindfulness Apps:</span> Even a few minutes daily can help reduce stress.</li>
+                    <li><span class="highlight">Engage in Relaxing Hobbies:</span> Make time for activities you enjoy to unwind and recharge.</li>
+                </ul>
+                <img src="picturs/rws.jpg" alt="Student practicing mindfulness">
+                <p>Mindfulness practices can lead to reduced stress, improved concentration, and a greater sense of calm.</p>
+            </section>
+
+            <section class="section" id="study-habits">
+                <h2>Developing Effective Study Strategies</h2>
+                <p>Efficient study habits can significantly reduce stress and improve academic outcomes, contributing to better mental health.</p>
+                <ul>
+                    <li><span class="highlight">Create a Study Schedule:</span> Plan your study time and stick to it.</li>
+                    <li><span class="highlight">Find a Dedicated Study Space:</span> Choose a quiet place free from distractions.</li>
+                    <li><span class="highlight">Practice Active Learning:</span> Engage with the material actively by summarizing and questioning.</li>
+                    <li><span class="highlight">Take Regular Breaks:</span> Short breaks can improve focus and prevent burnout.</li>
+                </ul>
+                <img src="picturs/sts.jpg" alt="Student studying at a desk">
+                <p>Effective study habits lead to better understanding, improved grades, and reduced academic stress.</p>
+            </section>
+
+            <section class="section" id="social-connections">
+                <h2>Nurturing Social Relationships</h2>
+                <p>Strong social connections provide support and a sense of belonging, which are crucial for mental well-being.</p>
+                <ul>
+                    <li><span class="highlight">Make Time for Friends and Family:</span> Nurture your relationships with loved ones.</li>
+                    <li><span class="highlight">Engage in Social Activities:</span> Participate in clubs, groups, or social events.</li>
+                    <li><span class="highlight">Communicate Openly:</span> Share your thoughts and feelings with trusted individuals.</li>
+                </ul>
+                <img src="picturs/nrb.jpg" alt="Group of students interacting">
+                <p>Strong social connections contribute to increased happiness and better coping mechanisms for stress.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sleep">Sleep</a></li>
+                    <li><a href="#nutrition">Nutrition</a></li>
+                    <li><a href="#exercise">Exercise</a></li>
+                    <li><a href="#mindfulness">Mindfulness</a></li>
+                    <li><a href="#study-habits">Study Habits</a></li>
+                    <li><a href="#social-connections">Social Connections</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <p>Follow us for more healthy tips and resources.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Have questions? Reach out to us.</p>
+                <ul>
+                    <li><a href="mailto:info@mindspace.com">info@mindspace.com</a></li>
+                    <li>(555) 123-4567</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 MindSpace. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>

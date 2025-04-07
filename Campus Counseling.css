@@ -1,0 +1,207 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-top: 100px; /* Add padding to the top to account for the fixed navigation */
+    background-color: #f8f9fa;
+    color: #495057;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Fixed Top Navigation */
+nav {
+    background-color: #343a40;
+    color: #fff;
+    margin-bottom: 0; /* Remove margin as it's fixed */
+    position: fixed; /* Fix the navigation to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+nav .container {
+    padding: 15px 30px; /* Adjust container padding for fixed nav */
+}
+
+nav .container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav .container ul li {
+    margin: 0 20px;
+}
+
+nav .container ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav .container ul li a:hover {
+    color: #007bff;
+}
+
+main {
+    padding: 30px 0;
+}
+
+.section {
+    padding: 60px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #007bff;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.section .container ul,
+.section .container ol {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.section .container li {
+    margin-bottom: 12px;
+}
+
+/* Image Styling */
+main img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    display: block; /* Remove extra space below inline images */
+    margin-bottom: 20px; /* Add some space below images */
+    border-radius: 8px; /* Optional: Rounded corners for all main images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Optional: Subtle shadow for images */
+}
+
+header img {
+    margin-top: 20px;
+}
+
+#about img {
+    width: 50%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the image */
+}
+
+#counseling-sections ul li img {
+    width: 24px;
+    vertical-align: middle;
+    margin-left: 5px;
+    border-radius: 0; /* Remove border-radius for icons */
+    box-shadow: none; /* Remove shadow for icons */
+    margin-bottom: 0; /* Remove bottom margin for icons */
+}
+
+#how-to-enroll img {
+    width: 60%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the image */
+}
+
+#enroll-form .container {
+    max-width: 700px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.note {
+    font-size: 0.95em;
+    color: #6c757d;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+    margin-top: 40px;
+}

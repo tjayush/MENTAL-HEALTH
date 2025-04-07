@@ -1,0 +1,873 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e3f2fd; /* Light blue background */
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #1e88e5; /* Brighter blue for links */
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0d47a1; /* Darker blue on hover */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px; /* Increased padding for better spacing */
+}
+
+/* Navigation */
+nav {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the navbar */
+    padding: 15px 30px; /* Consistent padding */
+}
+
+.logo {
+    font-size: 2.2rem; /* Increased font size for "MindSpace" */
+    font-weight: 700;
+    color: #1e88e5; /* Brighter blue for the main logo text */
+}
+
+.logo span {
+    color: #ff6f00; /* Vibrant orange for the span */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center; /* Ensure nav links are vertically aligned */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 30px; /* Increased spacing between links */
+}
+
+.nav-links a {
+    font-weight: 500;
+    color: #555; /* Slightly darker text for better readability */
+    position: relative;
+    padding: 8px 0; /* Add some vertical padding */
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff6f00; /* Vibrant orange for the underline */
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Smoother transition */
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.7rem; /* Slightly larger menu toggle */
+    color: #777;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('picturs/mainpic.jpg'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(254, 254, 254);
+    padding: 20px;
+}
+
+.hero .container {
+    background: rgba(0, 0, 0, 0.4); /* Slightly lighter overlay */
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    font-size: 3.5rem; /* Slightly larger heading */
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 35px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px; /* Slightly larger buttons */
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    background-color: #4caf50; /* Green for primary action */
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #388e3c;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Crisis Banner */
+.crisis-banner {
+    background-color: #f44336; /* Red for urgent messages */
+    color: #fff;
+    padding: 18px 0; /* Slightly increased padding */
+    text-align: center;
+}
+
+.crisis-banner p {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.crisis-banner .hotline {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* Section Styles */
+section {
+    padding: 90px 0; /* Increased padding */
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.6rem;
+    color: #1e88e5; /* Brighter blue for section titles */
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Resources Section */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+.resource-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.resource-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.resource-card-img {
+    height: 220px;
+    overflow: hidden;
+}
+
+.resource-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-out;
+}
+
+.resource-card:hover .resource-card-img img {
+    transform: scale(1.05);
+}
+
+.resource-card-content {
+    padding: 30px;
+}
+
+.resource-card h3 {
+    margin-bottom: 18px;
+    color: #333;
+}
+
+.resource-card p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.resource-card-link {
+    display: inline-block;
+    color: #a78bfa; /* Purple for resource links */
+    font-weight: 600;
+    position: relative;
+}
+
+.resource-card-link::after {
+    content: "→";
+    margin-left: 5px;
+    transition: margin 0.3s ease-in-out;
+}
+
+.resource-card-link:hover::after {
+    margin-left: 10px;
+}
+
+/* Self-Assessment */
+.assessment-container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.assessment-intro {
+    margin-bottom: 40px;
+}
+
+.question {
+    margin-bottom: 30px;
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
+
+.question h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option {
+    padding: 18px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.option:hover {
+    background-color: #e9ecef;
+}
+
+.option.selected {
+    background-color: #a78bfa; /* Purple for selected option */
+    color: #fff;
+}
+
+.assessment-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.prev-btn,
+.next-btn,
+.submit-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e88e5; /* Brighter blue for buttons */
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.prev-btn:hover,
+.next-btn:hover,
+.submit-btn:hover {
+    background-color: #0d47a1;
+}
+
+.prev-btn:disabled,
+.next-btn:disabled,
+.submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.assessment-result {
+    display: none;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.mild {
+    background-color: #ccff90; /* Bright green for mild */
+    border-left: 5px solid #8bc34a;
+}
+
+.moderate {
+    background-color: #fff9c4; /* Light yellow for moderate */
+    border-left: 5px solid #fdd835;
+}
+
+.severe {
+    background-color: #ffcdd2; /* Light red for severe */
+    border-left: 5px solid #f44336;
+}
+
+.result-score {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    margin: 20px 0;
+    height: 12px;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 8px;
+    background-color: #a78bfa; /* Purple for progress bar */
+    width: 0;
+    transition: width 0.8s ease-in-out;
+}
+
+.restart-btn {
+    background-color: #1e88e5; /* Brighter blue for restart button */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.restart-btn:hover {
+    background-color: #0d47a1;
+}
+
+.resources-list {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.resources-list h4 {
+    margin-bottom: 12px;
+}
+
+.resources-list ul {
+    list-style-type: none;
+}
+
+.resources-list li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.resources-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1e88e5; /* Brighter blue for list bullet */
+}
+
+/* Support Services */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 35px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.service-card h3 i {
+    margin-right: 12px;
+    color: #a78bfa; /* Purple for service icons */
+}
+
+.service-detail {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.contact-info i {
+    margin-right: 12px;
+    color: #1e88e5; /* Brighter blue for contact icons */
+}
+
+/* Testimonials */
+.testimonials-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.testimonial-text::before {
+    content: '"';
+    font-size: 5rem;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    color: #a78bfa; /* Purple for quote */
+    opacity: 0.2;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.author-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.author-info p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 90px 0 60px; /* Increased top and bottom padding */
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Keep auto-fit for flexibility */
+    gap: 40px;
+    margin-bottom: 60px; /* Increased margin */
+}
+
+.footer-column h3 {
+    color: #fff;
+    margin-bottom: 30px; /* Increased margin */
+    font-size: 1.4rem; /* Slightly larger font size */
+    position: relative;
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    width: 50px; /* Slightly wider underline */
+    height: 3px;
+    background-color: #a78bfa; /* Purple for footer underline */
+    bottom: -12px; /* Slightly lower */
+    left: 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 15px; /* Increased margin */
+}
+
+.footer-column ul li a {
+    color: #ddd;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px; /* Increased gap */
+    margin-top: 30px; /* Increased margin */
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px; /* Slightly larger */
+    height: 50px; /* Slightly larger */
+    background-color: #444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 1.2rem; /* Slightly larger icon size */
+}
+
+.social-link:hover {
+    background-color: #1e88e5; /* Brighter blue for social hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 40px; /* Increased padding */
+    border-top: 1px solid #555; /* Slightly lighter border */
+}
+
+.footer-bottom p {
+    color: #aaa;
+    font-size: 1rem; /* Slightly larger font size */
+}
+
+/* Responsive Styles */
+@media (min-width: 769px) {
+    .footer-content {
+        grid-template-columns: repeat(6, 1fr); /* Six columns of equal width */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .service-card {
+        padding: 25px;
+    }
+
+    .resources-grid,
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+}
+
+
+/* Floating Chat Icon */
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#chatbot-icon:hover {
+    background-color: #b71c1c;
+    transform: scale(1.1);
+}
+
+/* Chatbot Container */
+#chatbot-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    height: 450px;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Hide Chatbot Initially */
+.hidden {
+    display: none !important;
+}
+
+/* Chatbot Header */
+#chatbot-header {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+#close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Chatbot Body */
+#chatbot-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* Chatbot Messages */
+#chatbot-messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 85%;
+}
+
+.message.user {
+    background-color: blue;
+    color: white;
+    align-self: flex-end;
+}
+
+.message.bot {
+    background-color: #333;
+    color: white;
+    align-self: flex-start;
+}
+
+/* Input Section */
+#chatbot-input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #444;
+    background-color: #2c2c2c;
+}
+
+#chatbot-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+}
+
+#send-btn {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#send-btn:hover {
+    background-color: #b71c1c;
+}
+
+
+
+/* Sign Up Button */
+.signup-button {
+    background-color: #ff7043; /* Orange for sign up button */
+    color: #fff;
+    border: none;
+    padding: 12px 25px; /* Adjusted padding */
+    border-radius: 25px;
+    font-size: 1.1rem; /* Slightly larger font */
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+    background-color: #e64a19;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+.service-link {
+    text-decoration: none; /* Remove the default underline */
+    color: inherit; /* Inherit the text color from the parent */
+    display: block; /* Make the entire area clickable */
+    cursor: pointer; /* Change the cursor to indicate it's clickable */
+}
+
+.service-card {
+    /* Your existing styles for .service-card */
+    border: 1px solid #ccc; /* Example border */
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out; /* Optional: Add a slight hover effect */
+}
+
+.service-card:hover {
+    transform: translateY(-3px); /* Optional: Slight lift on hover */
+}
+
+
+
+
+
+

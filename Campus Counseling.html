@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Counseling</title>
+    <link rel="stylesheet" href="Campus Counseling.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Campus Counseling</h1>
+            <p>Free confidential counseling services available to all enrolled students.</p>
+            <img src="picturs/cc2.jpg" alt="Campus Counseling Banner" style="width: 100%; display: block; margin-top: 20px; border-radius: 8px;">
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#counseling-sections">Counseling Sections</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#how-to-enroll">How to Enroll</a></li>
+                <li><a href="#enroll-form">Enroll Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="counseling-sections" class="section">
+            <div class="container">
+                <h2>Counseling Sections</h2>
+                <p>We offer a range of counseling services to support your well-being:</p>
+                <ul>
+                    <li><strong>Individual Counseling:</strong> One-on-one sessions to address personal challenges.
+                        </li>
+                    <li><strong>Group Counseling:</strong> Connect with peers and share experiences in a supportive environment.
+                        </li>
+                    <li><strong>Career Counseling:</strong> Guidance and support for career exploration and planning.
+                        </li>
+                    <li><strong>Academic Counseling:</strong> Strategies for academic success and overcoming learning difficulties.
+                        </li>
+                    <li><strong>Mental Health Workshops:</strong> Informative sessions on various mental health topics.
+                        </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about" class="section bg-light">
+            <div class="container">
+                <h2>About Our Services</h2>
+                <img src="picturs/cc1.jpg" alt="Counseling Team" style="width: 40%; display: block; margin: 20px auto; border-radius: 8px;">
+                <p>The Campus Counseling service is committed to providing a safe, confidential, and supportive space for students to address their personal, academic, and career-related concerns. Our team of qualified and experienced counselors is dedicated to helping you navigate challenges, develop coping mechanisms, and enhance your overall well-being.</p>
+                <p>We believe that seeking support is a sign of strength, and we encourage all students to utilize our services whenever needed. Your privacy is our utmost priority, and all sessions are strictly confidential.</p>
+            </div>
+        </section>
+
+        <section id="how-to-enroll" class="section">
+            <div class="container">
+                <h2>How to Enroll</h2>
+                <p>Follow these simple steps to enroll in our counseling services:</p>
+                <ol>
+                    <li><strong>Review our services:</strong> Familiarize yourself with the different counseling sections we offer.</li>
+                    <li><strong>Complete the enrollment form:</strong> Fill out the online form with your details and preferences.</li>
+                    <li><strong>Submit the form:</strong> Once you have completed the form, click the submit button.</li>
+                    <li><strong>Confirmation:</strong> You will receive a confirmation email upon successful submission.</li>
+                    <li><strong>Schedule an initial consultation:</strong> Our team will contact you to schedule your first appointment.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="enroll-form" class="section bg-light">
+            <div class="container">
+                <h2>Enrollment Form</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" id="enrollmentForm">
+                    <input type="hidden" name="access_key" value="ffc5bcd3-0016-48a8-b74a-b7dd2cb1cb1c">
+                    <div class="form-group">
+                        <label for="studentName">Full Name:</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="studentID">Student ID:</label>
+                        <input type="text" id="studentID" name="studentID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number (Optional):</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="counselingType">Preferred Counseling Type:</label>
+                        <select id="counselingType" name="counselingType">
+                            <option value="individual">Individual Counseling</option>
+                            <option value="group">Group Counseling</option>
+                            <option value="career">Career Counseling</option>
+                            <option value="academic">Academic Counseling</option>
+                            <option value="workshop">Mental Health Workshop</option>
+                            <option value="undecided">Undecided</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Briefly describe why you are seeking counseling:</label>
+                        <textarea id="reason" name="reason" rows="4"></textarea>
+                    </div>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <button type="submit" class="btn-primary">Submit Enrollment</button>
+                </form>
+                <p class="note">Your information is kept strictly confidential.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Campus Counseling. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // You might want to remove or adjust the previous JavaScript for the success message
+        // as the redirect to the Web3Forms success page will now handle the feedback.
+    </script>
+</body>
+</html>
