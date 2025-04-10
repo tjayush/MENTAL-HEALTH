@@ -1,6 +1,6 @@
 # 🧠 MindSpace – A Web-Based Mental Health Monitoring System
 
-**MindSpace** is a privacy-focused, logic-driven mental health monitoring system tailored for students. Developed during the **Burn Brain Hackathon** by Team **CodeCrafters**, MindSpace empowers users to take control of their mental well-being through anonymous assessments, personalized recommendations, and chatbot support—all without the bias of AI-based analysis.
+**MindSpace** is a privacy-focused, logic-driven mental health monitoring system tailored for students. Developed during the **Burn Brain Hackathon at NIT Durgapur** by Team **CodeCrafters**, MindSpace empowers users to take control of their mental well-being through anonymous assessments, personalized recommendations, and chatbot support—all without the bias of AI-based analysis.
 
 🔗 **Live Project:** [https://tjayush.github.io/MENTAL-HEALTH/](https://tjayush.github.io/MENTAL-HEALTH/)  
 📂 **GitHub Repository:** [https://github.com/tjayush/MENTAL-HEALTH](https://github.com/tjayush/MENTAL-HEALTH)
@@ -70,12 +70,10 @@ Unlike traditional mental health tools that rely heavily on AI sentiment analysi
 
 ## 🧱 Architecture & Workflow
 
-1. **User Visit** → Access the app anonymously.
-2. **Self-Assessment** → PHQ-9 or GAD-7 questionnaire.
-3. **Distress Detection** → Logic-based analysis of score.
-4. **Result & Plan** → Personalized action plan generated.
-5. **Chatbot Support** → Users can chat anytime.
-6. **(Upcoming)** Gamified challenges to boost engagement.
+Here is the overall architecture of the MindSpace platform, illustrating user interaction, assessment flow, logic analysis, and response generation.
+
+![MindSpace Architecture](https://raw.githubusercontent.com/tjayush/MENTAL-HEALTH/main/assets/architecture.png)
+<!-- Replace the above URL with the actual image path in your repo -->
 
 ---
 
@@ -96,14 +94,15 @@ Unlike traditional mental health tools that rely heavily on AI sentiment analysi
 
 ---
 
-## 👨‍💻 Team – CodeCrafters
+## 👨‍💻 Team – CodeCrafters  
+**Developed during the Burn Brain Hackathon at NIT Durgapur**
 
-| Member           | Role                          |
-|------------------|-------------------------------|
-| Ayushman Sarkar  | Backend Development, Research |
-| Anisha Nag       | Frontend Design & UI          |
-| Barnali Mandal   | Chatbot Integration, Testing  |
-| Joyjeet Das      | UX Design, Documentation      |
+| Name             | Role Description                                                       |
+|------------------|-------------------------------------------------------------------------|
+| **Ayushman Sarkar** *(Team Leader)* | Backend Development, Research, Frontend, Chatbot Integration       |
+| **Anisha Nag**    | UI Design, Presentation (PPT)                                           |
+| **Barnali Mandal**| Testing & Debugging                                                     |
+| **Joyjeet Das**   | Documentation, Support, Image & Video Content Collection                |
 
 🎓 **Birbhum Institute of Engineering and Technology**
 
@@ -125,4 +124,3 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 ---
 
 > “**MindSpace** is more than an app—it's a safe space for students to listen to their minds, take action, and seek support with dignity.”
-
