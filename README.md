@@ -72,7 +72,7 @@ Unlike traditional mental health tools that rely heavily on AI sentiment analysi
 
 Here is the overall architecture of the MindSpace platform, illustrating user interaction, assessment flow, logic analysis, and response generation.
 
-![MindSpace Architecture](https://raw.githubusercontent.com/tjayush/MENTAL-HEALTH/main/assets/architecture.png)
+![MindSpace Architecture](mental_health_architecture_workflow.png)
 <!-- Replace the above URL with the actual image path in your repo -->
 
 ---
